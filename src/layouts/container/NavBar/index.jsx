@@ -35,7 +35,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className="flex gap-2 justify-center align-center">
-          <LuSearch className="text-[gray]  absolute left-3" />
+          
 
 
           <input
@@ -43,6 +43,7 @@ const Nav = () => {
             placeholder="Search for products..."
             className="rounded-3xl border bg-[#F0F0F0] p-1 text-[20px] ml-2 w-[30rem] relative pl-8m   "
           />
+          <LuSearch className="text-[gray]  absolute left-[1rem]" />
         </div>
       
         <div className="flex gap-[20px] ml-auto text-[25px] justify-center align-center mr-[20px] relative ">
