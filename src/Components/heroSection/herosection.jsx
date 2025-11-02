@@ -16,20 +16,20 @@ const Herosection = () => {
           <button className="bg-black text-white px-9 p-3 text-sm rounded-full hover:bg-gray-800 ">
             Shop Now
           </button>
-          <div className="flex gap-11  w-[60%] p-3 mt-10 ">
+          <div className="flex gap-11  w-[39%] p-3 mt-10 ">
             <div>
               
               <h2 className="font-bold text-3xl">200+</h2>
-              <p className=" text-gray-700">International Brands</p>
+              <p className=" text-gray-500 text-[10px]">International Brands</p>
             </div>
             <div>
-              <h2  className="font-bold text-3xl">2,000+</h2>
-              <p className=" text-gray-700">High-Quality Products</p>
+              <h2  className="font-bold text-3xl ">2,000+</h2>
+              <p className=" text-gray-500  text-[10px]">High-Quality Products</p>
             </div>
             <div>
               
               <h2  className="font-bold text-3xl">30,000+</h2>
-              <p className=" text-gray-700">Happy Customers</p>
+              <p className=" text-gray-500  text-[10px]">Happy Customers</p>
             </div>
           </div>
         </div>
