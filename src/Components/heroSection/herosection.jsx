@@ -3,7 +3,7 @@ import React from "react";
 const Herosection = () => {
   return (
     <>
-      <div className="bg-rectangle bg-cover h-[100vh] mx-auto pt-[50px] pl-[20px] ">
+      <div className="bg-rectangle bg-cover h-[100vh] mx-auto pt-[50px] pl-[20px]  p">
         <div className=" p-[50px] space-y-6 ">
           <h2 className=" text-6xl font-bold w-[44%] ">
             FIND CLOTHES THAT MATCHES YOUR STYLE

@@ -8,6 +8,7 @@ export default {
     extend: {
   backgroundImage: {
         'rectangle': "url('/src/assets/rectangle.svg')",
+         'black': "url('/src/assets/rectangle2.svg')",
       },
     },
   },

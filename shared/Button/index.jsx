@@ -8,6 +8,7 @@ const Button = ({ text, ...props }) => {
     >
       {text}
     </button>
+    
   )
 }
 
