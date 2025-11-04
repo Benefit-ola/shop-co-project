@@ -7,4 +7,8 @@ export {default as logo} from '../assets/logo.png';
 export {default as frame1 } from '../assets/Frame 32.svg';
 export {default as frame2 } from '../assets/Frame 33.svg';
 export {default as frame3 } from '../assets/Frame 34.svg';
-export {default as frame4 } from '../assets/Frame 38.svg';
+export {default as frame4 } from '../assets/Frame35.svg';
+export {default as frame5 } from '../assets/Frame36.svg';
+export {default as frame6 } from '../assets/Frame37.svg';
+export {default as frame7 } from '../assets/Frame39.svg';
+
