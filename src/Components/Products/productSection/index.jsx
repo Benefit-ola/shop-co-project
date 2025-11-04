@@ -77,7 +77,7 @@ const ProductList = () => {
 
   return (
     <>
-      <div className="mt-10 bg-black text-white p-[2rem] ">
+      <div className="mt-10 bg-black text-white p-[2rem]  ">
         <div>jhhhhhhhhhhhhhhhhh</div>
       </div>
       <div className="p-[40px] text-center m-[40px]">
