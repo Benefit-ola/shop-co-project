@@ -2,6 +2,11 @@ import React from "react";
 
 import Background from "../../BackgraoundSection";
 import {
+  brand1,
+  brand2,
+  brand3,
+  brand4,
+  brand5,
   frame1,
   frame2,
   frame3,
@@ -78,7 +83,13 @@ const ProductList = () => {
   return (
     <>
       <div className="mt-10 bg-black text-white p-[2rem]  ">
-        <div>jhhhhhhhhhhhhhhhhh</div>
+        <div className="flex justify-between">
+          <img src={brand1} alt="" />
+          <img src={brand2} alt="" />
+          <img src={brand3} alt="" />
+          <img src={brand4} alt="" />
+          <img src={brand5} alt="" />
+        </div>
       </div>
       <div className="p-[40px] text-center m-[40px]">
         <div className="mb-10 text-3xl font-bold ">

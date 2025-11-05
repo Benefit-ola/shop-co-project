@@ -78,6 +78,8 @@ import React from "react";
 import { logo } from "../../../constant";
 import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 import { TiSocialTwitter } from "react-icons/ti";
+import { TiMail } from "react-icons/ti";
+
 
 const FooterPage = () => {
   const footerLinks = [
@@ -100,7 +102,65 @@ const FooterPage = () => {
   ];
 
   return (
-    <div className="bg-gray-300 py-10 px-8 md:px-16 w-full">
+    <>
+     {/* <div className="bg-black  p-[20px] flex justify-between mx-7 rounded-xl ">
+<h2 className="text-white font-bold text-2xl w-[25%]">
+  STAY UPTO DATE ABOUT OUR LATEST OFFERS
+</h2>
+<div  className="max-w-[20rem] space-y-3">
+   <div className="relative flex-1  mx-auto">
+            <TiMail
+ className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-xl" />
+            <input
+              type="search"
+              placeholder="Enter your email address"
+              className="w-full pl-10 pr-4 py-2 rounded-3xl bg-[#F0F0F0]  outline-none text-sm"
+            />
+          </div>
+            <div className="  mx-auto ">
+  
+            <input
+              type="search"
+              placeholder="Subscribe to Newsletter"
+              className="w-full pl-10 pr-4 py-2 rounded-3xl bg-[#F0F0F0] text-sm outline-none text-center"
+            />
+          </div>
+</div>
+      </div> */}
+    
+
+
+  
+    <div className="bg-black p-6 md:p-10 flex flex-col md:flex-row justify-between items-center mx-7 rounded-xl gap-6">
+      <h2 className="text-white font-bold text-2xl md:w-[40%] text-center md:text-left">
+        STAY UP TO DATE ABOUT OUR LATEST OFFERS
+      </h2>
+
+      <div className="w-full md:w-[25rem] space-y-3 ">
+        
+        <div className="relative ">
+          <TiMail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-xl" />
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            className="w-full pl-10 pr-4 py-2 rounded-3xl bg-[#F0F0F0] outline-none  text-sm"
+          />
+        </div>
+
+        
+        <button className="w-full py-2 rounded-3xl bg-white text-black text-sm hover:bg-gray-200 transition">
+          Subscribe to Newsletter
+        </button>
+      </div>
+    </div>
+  
+
+
+
+    
+    <div className="bg-gray-200 py-10 px-8 md:px-16 w-full">
+      
+     
       <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-5">
         
         <div className=" md:w-[20rem]">
@@ -130,7 +190,7 @@ const FooterPage = () => {
           {footerLinks.map((section, index) => (
             <div key={index}>
               <h2 className="font-semibold mb-3">{section.title}</h2>
-              <ul className="text-sm space-y-9 text-gray-700">
+              <ul className="text-sm space-y-5 text-gray-700">
                 {section.links.map((link, i) => (
                   <li key={i} className="hover:text-black cursor-pointer transition">
                     {link}
@@ -144,12 +204,16 @@ const FooterPage = () => {
 
     
       <div className="border-t border-gray-400 mt-10 pt-4  text-xs text-gray-600">
-        © {new Date().getFullYear()} YourBrand. All rights reserved.
+        © {new Date().getFullYear()} Shop.co All rights reserved.
         <div>
-          
+          <div>
+            
+          </div>
+
         </div>
       </div>
-    </div>
+    </div>.
+    </>
   );
 };
 

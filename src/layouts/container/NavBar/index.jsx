@@ -67,7 +67,7 @@ import { LuSearch } from "react-icons/lu";
 const Nav = () => {
   return (
     <>
-      {/* Top Promo Bar */}
+      
       <div className="text-center p-2 bg-black text-white text-sm">
         Sign up and get 20% off your first order. <span className="underline cursor-pointer">Sign Up Now</span>
       </div>

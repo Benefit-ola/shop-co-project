@@ -77,7 +77,7 @@ const CustomersReview = () => {
 
   return (
     <section className="p-10 bg-gray-50">
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+      <h2 className="text-3xl md:text-4xl font-bold mb-10 ">
         OUR HAPPY CUSTOMERS
       </h2>
 
