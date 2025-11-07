@@ -99,7 +99,7 @@ const ProductList = () => {
           <div className="grid grid-cols-4 gap-4 mb-10 ">
             {products.map((product, index) => (
               <div key={index} className="">
-                <img src={product.image} alt={product.text} className="mb-4" />
+                <img src={product.image} alt={product.text} className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer" />
                 <h3 className="font-semibold mb-2">{product.text}</h3>
                 <p className="mb-2">{product.stars}</p>
                 <h4 className="font-bold">{product.price}</h4>
