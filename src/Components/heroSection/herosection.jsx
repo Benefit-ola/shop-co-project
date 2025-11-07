@@ -1,12 +1,19 @@
 import React from "react";
+import { star } from "../../constant";
 
 const Herosection = () => {
   return (
-    <div className="bg-rectangle bg-cover bg-center h-[100vh] flex items-center">
+    <div className="bg-rectangle bg-cover bg-center h-[100vh] flex items-center relative">
       <div className="px-6 sm:px-10 lg:px-20 py-10 space-y-6 max-w-2xl">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
           FIND CLOTHES THAT MATCH YOUR STYLE
         </h2>
+        <div>
+          <img src={star} alt="" className="absolute right-6 top-12" />
+           <img src={star} alt="" className="absolute right-[35rem]"/>
+          
+
+        </div>
 
         <p className="text-sm sm:text-base text-gray-600">
           Browse through our diverse range of meticulously crafted garments,

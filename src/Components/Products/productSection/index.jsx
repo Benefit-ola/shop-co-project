@@ -107,9 +107,9 @@ const ProductList = () => {
             ))}
           </div>
         </div>
-        <button className="border  px-12 p-2 text-sm rounded-full hover:bg-gray-800 text  ">
+       <Button  className="border   px-12 p-2 text-md rounded-full hover:bg-gray-300 text-black mt-10 ">
           view all
-        </button>
+        </Button>
 
         <div>
           <div className="text-center text-3xl font-bold m-[40px]">
@@ -126,9 +126,10 @@ const ProductList = () => {
           ))}
         </div>
         </div>
-         <button className="border  px-12 p-2 text-sm rounded-full hover:bg-gray-800 text mt-10 ">
+       
+        <Button  className="border   px-12 p-2 text-md rounded-full hover:bg-gray-300 text-black mt-10 ">
           view all
-        </button>
+        </Button>
       </div>
     </>
   );

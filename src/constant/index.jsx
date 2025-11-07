@@ -19,7 +19,8 @@ export {default as visa} from "../assets/Visa.svg";
 export {default as brand1} from "../assets/brand1.svg";
 export {default as brand2} from "../assets/brand2.svg";
 export {default as brand3} from "../assets/brand3.svg";
-export {default as brand4} from "../assets/brand4.svg"
-export {default as brand5} from "../assets/brand5.svg"
+export {default as brand4} from "../assets/brand4.svg";
+export {default as brand5} from "../assets/brand5.svg";
+export {default as star} from "../assets/bstar.svg";
 
 

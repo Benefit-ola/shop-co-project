@@ -63,6 +63,8 @@ import { logo } from "../../../constant";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { LuSearch } from "react-icons/lu";
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 
 const Nav = () => {
   return (
@@ -81,6 +83,11 @@ const Nav = () => {
 
     
         <ul className="flex gap-6 text-gray-700 font-medium">
+          <div className="flex"> <li className=" cursor-pointer ">Shop</li>
+          <RiArrowDropDownLine  className="text-2xl"/>
+
+          
+          </div>
           <li className=" cursor-pointer">Shop</li>
           <li className=" cursor-pointer">On Sale</li>
           <li className=" cursor-pointer">New Arrivals</li>
