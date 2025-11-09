@@ -22,5 +22,6 @@ export {default as brand3} from "../assets/brand3.svg";
 export {default as brand4} from "../assets/brand4.svg";
 export {default as brand5} from "../assets/brand5.svg";
 export {default as star} from "../assets/bstar.svg";
+export {default as bg} from "../assets/bg.svg";
 
 
