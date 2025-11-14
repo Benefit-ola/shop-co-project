@@ -22,6 +22,9 @@ export {default as brand3} from "../assets/brand3.svg";
 export {default as brand4} from "../assets/brand4.svg";
 export {default as brand5} from "../assets/brand5.svg";
 export {default as star} from "../assets/bstar.svg";
-export {default as bg} from "../assets/bg.svg";
-
+export {default as hero} from "../assets/hero.svg";
+export {default as mg} from "../assets/mg.svg"
+export {default as mg2 } from "../assets/mg2.svg"
+ export {default as mg3 } from "../assets/mg3.svg"
+ 
 

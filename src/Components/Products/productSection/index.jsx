@@ -82,7 +82,7 @@ const ProductList = () => {
 
   return (
     <>
-      <div className="mt-10 bg-black text-white p-[2rem]  ">
+      <div className="bg-black text-white p-[2rem]  ">
         <div className="flex justify-between">
           <img src={brand1} alt="" />
           <img src={brand2} alt="" />

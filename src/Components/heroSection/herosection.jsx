@@ -1,18 +1,20 @@
 import React from "react";
-import { bg, star } from "../../constant";
+import {  hero, star } from "../../constant";
 
 const Herosection = () => {
   return (
-    <div className=" bg-[#F0EEED] h-[100vh] py-10 flex items-center relative overflow-hidden">
+    <div className=" bg-[#F2F0F1] h-[100vh] py-10 flex items-center relative overflow-hidden w-full">
       <div className="px-6 sm:px-10 lg:px-20 py-10 space-y-6 max-w-2xl">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold  leading-tight">
           FIND CLOTHES THAT MATCH YOUR STYLE
         </h2>
+        
         <div>
-          <img src={star} alt="" className="absolute right-6 top-12" />
-           <img src={star} alt="" className="absolute right-[35rem]"/>
+          <img src={star} alt="" className="absolute right-10  z-50 top-12" />
+           <img src={star} alt="" className="absolute right-[35rem] z-50"/>
       
         </div>
+
 
         <p className="text-sm sm:text-base text-gray-600">
           Browse through our diverse range of meticulously crafted garments,
@@ -39,11 +41,12 @@ const Herosection = () => {
           </div>
         </div>
       </div>
-          
-            <img src={bg} alt="" className="h-[40rem] relative left-0"/>
+        
+              <div><img src={hero} alt="" className="h-[40rem] relative left-0 "/></div>
           
     </div>
   );
 };
 
 export default Herosection;
+
