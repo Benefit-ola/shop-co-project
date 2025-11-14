@@ -26,5 +26,8 @@ export {default as hero} from "../assets/hero.svg";
 export {default as mg} from "../assets/mg.svg"
 export {default as mg2 } from "../assets/mg2.svg"
  export {default as mg3 } from "../assets/mg3.svg"
+ export {default as circle } from "../assets/circle.svg"
+ export {default as circle2 } from "../assets/circle2.svg"
+ export {default as circle3 } from "../assets/circle3.svg"
  
 
