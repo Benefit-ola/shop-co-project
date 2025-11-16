@@ -10,8 +10,8 @@ const ProductDetails = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <>
-      <div className="">
+    <div className="mx-[3rem] ">
+      {/* <div className="">
         <ul className="flex gap-5 ">
           <div className="flex  gap-2">
             <li className="text-2xl">Home</li>
@@ -35,47 +35,67 @@ const ProductDetails = () => {
             <li>T-shirts</li>
           </div>
         </ul>
-      </div>
-      <div className="flex gap-10 mt-5">
-        <div className="flex gap-4">
-          <div className="flex flex-col gap-1 object-contain">
+      </div> */}
+
+      <div className="flex  mt-5  gap-4 ">
+        <div className="flex gap-4  p-[20px] ">
+          <div className="flex flex-col gap-10 object-contain">
             {productImage.slice(1, 4).map((src, i) => (
-              <div className="w-16 h-16 rounded-lg border" key={i}>
-                <img src={src} alt="" onClick={() => setActiveimage(src)} />
+              <div
+                className="h-[5rem] w-[6rem]
+               rounded-lg "
+                key={i}
+              >
+                <img
+                  src={src}
+                  alt=""
+                  onClick={() => setActiveimage(src)}
+                  className=""
+                />
               </div>
             ))}
           </div>
-          <div className="w-36 h-36 border rounded-lg ">
-            <img src={activeimage} alt="" />
+          <div className=" ">
+            <img
+              src={activeimage}
+              alt=""
+              className=" h-18  w-[20rem] object-contain"
+            />
           </div>
         </div>
-        <div className="">
-          <hr />
-          <h1 className="font-extrabold text-3xl mb-3">
+        <div className="p-1">
+          <h1 className="font-extrabold text-4xl mt-2">
             One Life Graphic T-shirt
           </h1>
+          
+          <div className="flex gap-2 items-center">
+            
+            <p className="mt-2">⭐⭐⭐⭐⭐</p>
+            <p className="text-gray-300 ">4.5/5</p>
+          </div>
 
-          <p>⭐⭐⭐⭐⭐</p>
-          <div className="text-lg font-bold flex gap-2 mb-3  ">
+          <div className="text-lg font-bold flex gap-2 mt-2  ">
             <p>$260</p>
             <p className="text-[#9A9A9A]">$300</p>
           </div>
 
-          <p className="text-sm w-[35rem] text-[#9A9A9A]">
+          <p className="text-sm w-[35rem] mt-2 mb-3 text-[#9A9A9A]">
             This graphic t-shirt which is perfect for any occasion. Crafted from
             a soft and breathable fabric, it offers superior comfort and style.
           </p>
+          <hr />
           <div className="mt-3 ">
             <h3 className="text-[#9A9A9A] mt-3 mb-3">Select Colors</h3>
-            <div className="flex gap-2">
+            <div className="flex gap-2 mb-4">
               <img src={circle} alt="" />
               <img src={circle2} alt="" />
               <img src={circle3} alt="" />
             </div>
           </div>
+          <hr />
           <div>
-            <h3 className="text-[#9A9A9A] mt-3">Choose Size</h3>
-            <div className="flex gap-4">
+            <h3 className="text-[#9A9A9A] mt-4">Choose Size</h3>
+            <div className="flex gap-4  mb-7">
               <Button className="border   px-3 p-2 text-md rounded-full text-[#9A9A9A] mt-3 ">
                 Small
               </Button>
@@ -85,25 +105,26 @@ const ProductDetails = () => {
               <Button className="border   px-3 p-2 text-md rounded-full  text-[#9A9A9A] mt-3 ">
                 Large
               </Button>
-              <Button className="border   px-3 p-2 text-md rounded-full  text-[#9A9A9A] mt-3 ">
+              <Button className="border   px-3 p-2 text-md rounded-full  text-[#9A9A9A] mt-3  ">
                 X-Large
               </Button>
             </div>
+
           </div>
-          <div className="flex gap-3">
+           <hr />
+          <div className="flex gap-3 mt-4">
             <Button className="border flex gap-7 items-center  px-12 p-2 text-md rounded-full hover:bg-gray-300 text-black mt-3 ">
-             
               <FaMinus />
               1
               <FaPlus />
             </Button>
-            <Button className="border   px-12 p-2 text-md rounded-full bg-[black] text-white mt-3 ">
+            <Button className="border w-full  px-12 p-2 text-md rounded-full bg-[black] text-white mt-3 ">
               Add to Cart
             </Button>
           </div>
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between mt-10">
         <p className="cursor-pointer" onClick={() => setActiveTab(1)}>
           Product Details
         </p>
@@ -116,7 +137,7 @@ const ProductDetails = () => {
       </div>
       {activeTab === 1 && <div className="">tab oneeeeeeeeeeeee</div>}
       {activeTab === 2 && <div className="">tab twoooooooooo</div>}
-    </>
+    </div>
   );
 };
 
