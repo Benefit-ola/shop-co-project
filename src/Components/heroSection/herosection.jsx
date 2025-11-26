@@ -3,7 +3,7 @@ import {  hero, star } from "../../constant";
 
 const Herosection = () => {
   return (
-    <div className=" bg-[#F2F0F1] h-[100vh] py-10 flex items-center relative overflow-hidden w-full">
+    <div className="md: bg-[#F2F0F1] h-[100vh] py-10 flex items-center relative overflow-hidden w-full lg:flex-row flex-col-reverse  ">
       <div className="px-6 sm:px-10 lg:px-20 py-10 space-y-6 max-w-2xl">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold  leading-tight">
           FIND CLOTHES THAT MATCH YOUR STYLE
@@ -22,7 +22,7 @@ const Herosection = () => {
           style.
         </p>
 
-        <button className="bg-black text-white px-8 py-3 text-sm rounded-full hover:bg-gray-800 transition">
+        <button className=" bg-black text-white px-8 py-3 text-sm rounded-full hover:bg-gray-800 transition  ">
           Shop Now
         </button>
 

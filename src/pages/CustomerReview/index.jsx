@@ -49,6 +49,7 @@
 // export default  CustomersReview
 
 import React from "react";
+import { IoMdCheckmark } from "react-icons/io";
 
 const CustomersReview = () => {
   const reviews = [
@@ -88,8 +89,9 @@ const CustomersReview = () => {
             className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200"
           >
             <div className="text-yellow-500 text-xl mb-3">{review.stars}</div>
-            <h3 className="text-lg font-semibold mb-2 text-gray-800">
+            <h3 className="text-lg font-semibold mb-2 text-gray-800 flex items-center gap-2">
               {review.name}
+                <IoMdCheckmark className="bg-[#4ab04a] text-white rounded-full" />
             </h3>
             <p className="text-gray-600 leading-relaxed text-sm">
               {review.comment}

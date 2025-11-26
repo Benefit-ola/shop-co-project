@@ -29,5 +29,10 @@ export {default as mg2 } from "../assets/mg2.svg"
  export {default as circle } from "../assets/circle.svg"
  export {default as circle2 } from "../assets/circle2.svg"
  export {default as circle3 } from "../assets/circle3.svg"
+export {default as frame} from "../assets/frame.svg"
+ export {default as frame8 } from "../assets/frame8.svg"
+ export {default as frame9 } from "../assets/frame9.svg"
+ export {default as frame10 } from "../assets/frame10.svg"
+
  
 
