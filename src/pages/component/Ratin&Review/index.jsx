@@ -1,6 +1,10 @@
 import React from "react";
 import { BsThreeDots } from "react-icons/bs";
-import { IoIosArrowDown, IoMdCheckmark, IoMdCheckmarkCircle } from "react-icons/io";
+import {
+  IoIosArrowDown,
+  IoMdCheckmark,
+  IoMdCheckmarkCircle,
+} from "react-icons/io";
 import { RiAlignVertically } from "react-icons/ri";
 import Button from "../../../../shared/Button";
 
@@ -73,7 +77,7 @@ const RateReview = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4 px-4 ">
-          {reviews.map((review, id) => (
+          {reviews.map((review) => (
             <div
               key={review.id}
               className="bg-white  rounded-xl border border-gray-200 p-6  hover:shadow-lg transition-shadow duration-300"
@@ -88,7 +92,6 @@ const RateReview = () => {
               <h3 className="text-lg font-semibold mb-2 text-gray-800 flex items-center gap-2">
                 {review.name}
                 <IoMdCheckmark className="bg-[#4ab04a] text-white rounded-full" />
-
               </h3>
               <p className="text-gray-600 leading-relaxed text-sm mb-4">
                 {review.comment}
@@ -97,10 +100,12 @@ const RateReview = () => {
             </div>
           ))}
         </div>
-        <div className="text-center">  <Button  className="border    p-2 text-md rounded-full hover:bg-gray-300 text-black mt-7 ">
-          Load More Reviews
-        </Button></div>
-       
+        <div className="text-center">
+          {" "}
+          <Button className="border    p-2 text-md rounded-full hover:bg-gray-300 text-black mt-7 ">
+            Load More Reviews
+          </Button>
+        </div>
       </div>
     </>
   );
