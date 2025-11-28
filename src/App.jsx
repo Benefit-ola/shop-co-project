@@ -8,6 +8,7 @@ import Products from "./pages/component/Products";
 import ProductDetails from "./Components/Products/productDetailsSetion";
 import RateReview from "./pages/component/Ratin&Review";
 import CategoryPage from "./pages/component/categoryPage";
+import CartPage from "./pages/component/CartPage";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path="/productdetail" element={<ProductDetails />} />
           <Route path="/rate-review" element={<RateReview  />} />
            <Route path="/category" element={<CategoryPage  />} />
+            <Route path="/cartPage" element={< CartPage  />} />
+          
           
 
         </Routes>

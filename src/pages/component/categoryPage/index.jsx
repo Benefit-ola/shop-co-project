@@ -82,7 +82,7 @@ const CategoryPage = () => {
 
   return (
     <>
-      <div className="flex gap-4 mx-8 w-full my-8 ">
+      <div className="flex gap-6 mx-8 w-full my-8 items-start ">
         <div className="border shadow-md p-[30px] flex flex-col gap-4 rounded-xl w-[300px] h-fit">
           <div>
             <div className="flex items-center justify-between gap-10  ">
