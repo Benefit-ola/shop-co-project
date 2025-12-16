@@ -22,6 +22,7 @@ function App() {
           <Route path="/rate-review" element={<RateReview  />} />
            <Route path="/category" element={<CategoryPage  />} />
             <Route path="/cartPage" element={< CartPage  />} />
+            
           
           
 
