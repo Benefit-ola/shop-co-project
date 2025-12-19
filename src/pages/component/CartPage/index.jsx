@@ -13,28 +13,31 @@ const CartPage = () => {
   };
   return (
     <>
-      <div className="p-10 flex flex-col ">
-        <h2 className="font-extrabold text-2xl">YOUR CART</h2>
-        <div className="flex gap-3 ">
+      <div className="p-10 flex flex-col">
+        <h2 className="font-extrabold text-2xl ">YOUR CART</h2>
+        <div className="flex md:flex-row  flex-col gap-3 space-y-3 w-full  mt-5">
           <div className="border rounded-xl">
             <div className="flex flex-col gap-4 p-3">
               <div>
                 <div className="flex justify-between items-start gap-4">
-                  {/* LEFT SIDE */}
-                  <div className="flex gap-4 ">
+                  <div className="flex gap-5 ">
                     <img
                       src={frame8}
                       alt=""
-                      className="w-[25%]
-                         object-cover"
+                      className="md:w-[25%]
+                         object-cover w-[45%]"
                     />
 
-                    <div className=" ">
-                      <h2 className="font-bold text-lg">
-                        Gradient Graphic T-shirt
-                      </h2>
+                    <div className=" w-full ">
+                      <div className="flex justify-between">
+                        <h2 className="font-bold md:text-lg md:w-[15rem]">
+                          Gradient Graphic T-shirt
+                        </h2>
+                        <RiDeleteBin6Line className="text-2xl text-red-600 cursor-pointer" />
+                      </div>
+
                       <p>
-                        Size:{" "}
+                      
                         <span className="text-gray-400">
                           {product.tshirt.size}
                         </span>
@@ -44,39 +47,35 @@ const CartPage = () => {
                         Color:{" "}
                         <span className="text-gray-400">
                           {product.tshirt.color}
-                        </span>{" "}
+                        </span>
                       </p>
-
-                      <h3 className="font-bold text-lg mt-2">$45.00</h3>
+                      <div className="flex  gap-5 justify-between">
+                        <h3 className="font-bold text-lg mt-2">$45.00</h3>
+                        <Button className="border p-3 px-5 text-md rounded-full hover:bg-gray-300 text-black flex items-center gap-5">
+                          <FaMinus />
+                          1
+                          <FaPlus />
+                        </Button>
+                      </div>
                     </div>
-                  </div>
-
-                  {/* RIGHT SIDE */}
-                  <div className="flex flex-col items-center justify-between gap-[4rem] mb-5">
-                    <RiDeleteBin6Line className="text-2xl text-red-600 cursor-pointer" />
-
-                    <Button className="border p-3 px-5 text-md rounded-full hover:bg-gray-300 text-black flex items-center gap-5">
-                      <FaMinus />
-                      1
-                      <FaPlus />
-                    </Button>
                   </div>
                 </div>
               </div>
               <hr />
               <div>
                 <div className="flex justify-between items-start gap-4">
-                  {/* LEFT SIDE */}
                   <div className="flex gap-4 ">
                     <img
                       src={frame3}
                       alt=""
-                      className="w-[25%]
-                         object-cover"
+                      className="md:w-[25%]
+                         object-cover w-[45%]"
                     />
 
                     <div className=" ">
-                      <h2 className="font-bold text-lg">CHECKERED SHIRT</h2>
+                      <h2 className="font-bold md:text-lg w-[15rem]">
+                        CHECKERED SHIRT
+                      </h2>
                       <p>
                         Size:{" "}
                         <span className="text-gray-400">
@@ -95,7 +94,6 @@ const CartPage = () => {
                     </div>
                   </div>
 
-                  {/* RIGHT SIDE */}
                   <div className="flex flex-col items-center justify-between gap-[4rem]  mb-5">
                     <RiDeleteBin6Line className="text-2xl text-red-600 cursor-pointer" />
 
@@ -110,17 +108,18 @@ const CartPage = () => {
               <div>
                 <hr />
                 <div className="flex justify-between items-start gap-4 mt-5">
-                  {/* LEFT SIDE */}
                   <div className="flex gap-4 ">
                     <img
                       src={frame2}
                       alt=""
-                      className="w-[25%]
-                         object-cover"
+                      className="md:w-[25%]
+                         object-cover w-[45%]"
                     />
 
                     <div className=" ">
-                      <h2 className="font-bold text-lg">SKINNY FIT JEANS</h2>
+                      <h2 className="font-bold md:text-lg w-[15rem]">
+                        SKINNY FIT JEANS
+                      </h2>
 
                       <p>
                         Size:{" "}
@@ -140,7 +139,6 @@ const CartPage = () => {
                     </div>
                   </div>
 
-                  {/* RIGHT SIDE */}
                   <div className="flex flex-col items-center justify-between gap-[4rem] ">
                     <RiDeleteBin6Line className="text-2xl text-red-600 cursor-pointer" />
 
@@ -200,8 +198,10 @@ const CartPage = () => {
             </div>
 
             <Button className="mt-5 py-4 w-full px-4  flex items-center gap-4 justify-center rounded-3xl bg-black text-white text-sm hover:bg-gray-800 transition">
-              Go to Checkout <span><FaArrowRight />
-</span>
+              Go to Checkout{" "}
+              <span>
+                <FaArrowRight />
+              </span>
             </Button>
           </div>
         </div>

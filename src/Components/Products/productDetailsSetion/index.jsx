@@ -79,9 +79,9 @@ const ProductDetails = () => {
         </ul>
       </div> */}
 
-      <div className="flex  mt-5  gap-4 ">
-        <div className="flex gap-4  p-[20px] ">
-          <div className="flex flex-col gap-10 object-contain">
+      <div className="flex mt-5 flex-col md:flex-row  gap-4 ">
+        <div className="flex gap-4 flex-col-reverse md:flex-row p-[20px] ">
+          <div className="flex md:flex-col gap-10 object-contain">
             {productImage.slice(1, 4).map((src, i) => (
               <div
                 className="h-[5rem] w-[6rem]
@@ -120,7 +120,7 @@ const ProductDetails = () => {
             <p className="text-[#9A9A9A]">$300</p>
           </div>
 
-          <p className="text-sm w-[35rem] mt-2 mb-3 text-[#9A9A9A]">
+          <p className="text-sm md:w-[35rem] mt-2 mb-3 text-[#9A9A9A]">
             This graphic t-shirt which is perfect for any occasion. Crafted from
             a soft and breathable fabric, it offers superior comfort and style.
           </p>
