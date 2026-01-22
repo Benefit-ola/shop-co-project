@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { frame2, frame3, frame8 } from "../../../constant";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaArrowRight, FaMinus, FaPlus } from "react-icons/fa6";
@@ -6,11 +6,15 @@ import Button from "../../../../shared/Button";
 import { TiMail } from "react-icons/ti";
 
 const CartPage = () => {
+  const [quantity, setQuantity] = useState(1);
+
   const product = {
     jeans: { size: "Large", color: "Blue" },
     shirt: { size: "Medium", color: "Red" },
     tshirt: { size: "Large", color: "White" },
   };
+
+ 
   return (
     <>
       <div className="p-10 flex flex-col">
@@ -19,7 +23,7 @@ const CartPage = () => {
           <div className="border rounded-xl">
             <div className="flex flex-col gap-4 p-3">
               <div>
-                <div className="flex justify-between items-start gap-4">
+                <div className="md:flex  justify-between flex-col items-start gap-4">
                   <div className="flex gap-5 ">
                     <img
                       src={frame8}
@@ -51,11 +55,13 @@ const CartPage = () => {
                       </p>
                       <div className="flex  gap-5 justify-between">
                         <h3 className="font-bold text-lg mt-2">$45.00</h3>
-                        <Button className="border p-3 px-5 text-md rounded-full hover:bg-gray-300 text-black flex items-center gap-5">
-                          <FaMinus />
-                          1
-                          <FaPlus />
-                        </Button>
+                        <Button className="border flex gap-7 items-center  p-2 rounded-full">
+                <FaMinus
+                  onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+                />
+                {quantity}
+                <FaPlus onClick={() => setQuantity((q) => q + 1)} />
+              </Button>
                       </div>
                     </div>
                   </div>

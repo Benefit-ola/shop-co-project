@@ -3,10 +3,10 @@ import {  hero, star } from "../../constant";
 
 const Herosection = () => {
   return (
-    <div className="md: bg-[#F2F0F1] h-[100vh] py-10 flex items-center relative overflow-hidden w-full lg:flex-row flex-col-reverse  ">
-      <div className="px-6 sm:px-10 lg:px-20 py-10 space-y-6 max-w-2xl">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold  leading-tight">
-          FIND CLOTHES THAT MATCH YOUR STYLE
+    <div className="md:bg-[#F2F0F1] h-[100vh] px-6 flex items-center relative overflow-hidden md:w-full lg:flex-row flex-col ">
+      <div className=" space-y-6 ">
+        <h2 className="text-4xl w-[80%] md:text-6xl font-extrabold  leading-tight">
+          FIND CLOTHES THAT MATCHS YOUR STYLE
         </h2>
         
         <div>
@@ -16,7 +16,7 @@ const Herosection = () => {
         </div>
 
 
-        <p className="text-sm sm:text-base text-gray-600">
+        <p className="text-sm w-[100%] text-gray-600">
           Browse through our diverse range of meticulously crafted garments,
           designed to bring out your individuality and cater to your sense of
           style.

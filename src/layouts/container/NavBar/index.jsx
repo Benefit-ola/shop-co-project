@@ -55,19 +55,20 @@
 
 // export default Nav;
 
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { logo } from "../../../constant";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { LuSearch } from "react-icons/lu";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiMenuFries } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const handleMenuToggle = () => {
     setOpenMenu(!openMenu);
-  }
+  };
 
   return (
     <>
@@ -112,13 +113,15 @@ const Nav = () => {
         <div className="md:hidden">
           <div className="flex items-center justify-between p-4">
             <div className="flex items-center gap-4 text-2xl text-black">
-              <CiMenuFries  onClick={handleMenuToggle}/>
+              <CiMenuFries onClick={handleMenuToggle} />
 
               <div className="w-[100px]">
                 <img src={logo} alt="Logo" className="w-full h-auto" />
               </div>
             </div>
+            {/* <Link to="/cartPage">
             <div className="flex items-center gap-4 text-2xl text-gray-700 relative">
+              
               <div className="relative cursor-pointer">
                 <FiShoppingCart />
                 <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
@@ -127,21 +130,34 @@ const Nav = () => {
               </div>
               <FaRegCircleUser className="cursor-pointer" />
             </div>
+            </Link> */}
+
+            <div className="flex items-center gap-4 text-2xl text-gray-700">
+              <Link to="/cartPage" className="relative cursor-pointer">
+                <FiShoppingCart />
+                <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
+                  0
+                </span>
+              </Link>
+
+              <FaRegCircleUser className="cursor-pointer" />
+            </div>
           </div>
-          {
-            openMenu === true && (
-              <div className="fixed top-28 w-full z-50 ">
-                <div className="bg-white w-1/2 h-fit p-6 relative rounded-lg shadow-lg ">
+          {openMenu === true && (
+            <div className="fixed top-28 w-full z-50 ">
+              <div className="bg-white w-1/2 h-fit p-6 relative rounded-lg shadow-lg ">
                 <ul>
-                    <li className="mb-4 cursor-pointer flex items-center"> Shop <RiArrowDropDownLine className="text-2xl" /></li>
-                    <li className="mb-4 cursor-pointer">On Sale</li>
-                    <li className="mb-4 cursor-pointer">New Arrivals</li>
-                    <li className="mb-4 cursor-pointer">Brands</li>
+                  <li className="mb-4 cursor-pointer flex items-center">
+                    {" "}
+                    Shop <RiArrowDropDownLine className="text-2xl" />
+                  </li>
+                  <li className="mb-4 cursor-pointer">On Sale</li>
+                  <li className="mb-4 cursor-pointer">New Arrivals</li>
+                  <li className="mb-4 cursor-pointer">Brands</li>
                 </ul>
-                </div>
               </div>
-            )
-          }
+            </div>
+          )}
         </div>
       </div>
     </>

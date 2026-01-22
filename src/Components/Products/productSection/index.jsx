@@ -1,6 +1,5 @@
-import React from "react";
+import React, {  useState } from "react";
 
-import Background from "../../BackgraoundSection";
 import {
   brand1,
   brand2,
@@ -16,8 +15,19 @@ import {
   frame7,
 } from "../../../constant";
 import Button from "../../../../shared/Button";
+import { Link, } from "react-router-dom";
+import TopSelling from "../productTopSelling";
+import CartPage from "../../../pages/component/CartPage";
 
 const ProductList = () => {
+  const [viewNewArrival, setViewNewArrival] = useState(false);
+  const [viewTopSelling, setViewTopSelling] = useState(false);
+  //   useEffect(() => {
+  //   if (viewAll === 2) {
+  //     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  //   }
+  // }, [viewAll]);
+
   const products = [
     {
       id: 1,
@@ -38,7 +48,7 @@ const ProductList = () => {
       image: frame3,
       text: "SLEEVE STRIPED T-SHIRT",
       stars: "⭐⭐⭐⭐⭐",
-      price: "$$180",
+      price: "$180",
     },
     {
       id: 4,
@@ -96,19 +106,29 @@ const ProductList = () => {
           <h1>NEW ARRIVALS</h1>
         </div>
         <div>
-          <div className="grid grid-cols-4 gap-4 mb-10 ">
-            {products.map((product, index) => (
-              <div key={index} className="">
-                <img src={product.image} alt={product.text} className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer" />
-                <h3 className="font-semibold mb-2">{product.text}</h3>
-                <p className="mb-2">{product.stars}</p>
-                <h4 className="font-bold">{product.price}</h4>
-              </div>
+          <div className="grid grid-cols-4 gap-4 mb-10">
+            {products.map((product) => (
+              <Link key={product.id} to={`/productdetail/${product.id}`}>
+                <div className="">
+                  <img
+                    src={product.image}
+                    alt={product.text}
+                    className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
+                  />
+                  <h3 className="font-semibold mb-2">{product.text}</h3>
+                  <p className="mb-2">{product.stars}</p>
+                  <h4 className="font-bold">{product.price}</h4>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
-       <Button  className="border   px-12 p-2 text-md rounded-full hover:bg-gray-300 text-black mt-10 ">
-          view all
+        {viewNewArrival === true && <CartPage />}
+        <Button
+          onClick={() => setViewNewArrival(!viewNewArrival)}
+          className="border px-12 p-2 text-md rounded-full hover:bg-gray-300 text-black mt-10"
+        >
+          {viewNewArrival === true ? "hide" : "view all"}
         </Button>
 
         <div>
@@ -116,19 +136,23 @@ const ProductList = () => {
             <h1>TOP SELLING</h1>
           </div>
           <div className="grid grid-cols-4 gap-4 mt-10  text-center ">
-          {topSellingProducts.map((product, index) => (
-            <div key={index} className="">
-              <img src={product.image} alt={product.text} className="mb-4" />
-              <h3 className="font-semibold mb-2">{product.text}</h3>
-              <p className="mb-2">{product.stars}</p>
-              <h4 className="font-bold">{product.price}</h4>
-            </div>
-          ))}
+            {topSellingProducts.map((product, index) => (
+              <div key={index} className="">
+                <img src={product.image} alt={product.text} className="mb-4" />
+                <h3 className="font-semibold mb-2">{product.text}</h3>
+                <p className="mb-2">{product.stars}</p>
+                <h4 className="font-bold">{product.price}</h4>
+              </div>
+            ))}
+          </div>
         </div>
-        </div>
-       
-        <Button  className="border   px-12 p-2 text-md rounded-full hover:bg-gray-300 text-black mt-10 ">
-          view all
+
+        {viewTopSelling === true && <TopSelling />}
+        <Button
+          onClick={() => setViewTopSelling(!viewTopSelling)}
+          className="border px-12 p-2 text-md rounded-full hover:bg-gray-300 text-black mt-10"
+        >
+          {viewTopSelling === true? "Hide" : "View all"}
         </Button>
       </div>
     </>

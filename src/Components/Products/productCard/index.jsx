@@ -9,7 +9,7 @@ const ProductCard = ({ image, text, stars, price }) => {
         </div>
         <h3>{text}</h3>
         <p>{stars}</p>
-        <h4>{price}</h4>
+        <h4>${price}</h4>
       </div>
     </>
   );

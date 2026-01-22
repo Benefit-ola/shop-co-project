@@ -6,15 +6,15 @@ const BrowseList = () => {
     <>
       <div>
         <div className="  text-center bg-[#F0F0F0] p-[2rem] m-[4rem] rounded-3xl">
-          <h2 className="font-extrabold text-3xl mb-3 mt-3 ">
+          <h2 className=" md:text-4xl text-2xl  font-extrabold mb-4 mt-3 ">
             BROWSE BY DRESS STYLE
           </h2>
-          <div className="m-[3rem]">
+          <div className="">
           
-            <div className="flex gap-5 ">
+            <div className="md:flex flex-cols-1  gap-5  ">
               <div className="relative">
-              <div> <img src={image1} alt="" className="rounded-xl" />
-              <p className="font-bold  text-lg absolute top-4 left-6">Casual</p>
+              <div> <img src={image1} alt="" className="rounded-xl mb-5" />
+              <p className="font-bold  text-lg absolute  top-4 left-6">Casual</p>
               </div>
               
               </div>
@@ -28,12 +28,12 @@ const BrowseList = () => {
               </div>
              
             </div>
-            <div className="flex gap-5  mt-4 ">
+            <div className="md:flex gap-5 flex-cols-1  mt-4">
               <div className="relative">
                 <img src={image3} alt="" className="rounded-xl" />
                 <p className="font-bold text-lg absolute top-4 left-6">Party</p>
               </div>
-              <div className="relative"><img src={image4} alt=""  className="rounded-xl" />
+              <div className="relative"><img src={image4} alt=""  className="rounded-xl mt-5" />
               <p className="font-bold text-lg absolute top-4 left-6">Gym</p>
               </div>
               
